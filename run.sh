@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 : ${LS_HOME:=/var/lib/logstash}
 : ${HOME:=${LS_HOME}}
