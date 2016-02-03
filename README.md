@@ -70,6 +70,16 @@ As usual, configuration is passed through environment variables.
 - GELF_HOST - the hostname of a gelf server to send the messages to 
 - GELF_PORT - the port for use on the gelf server. Default to 12201
 
+### Rabbitmq Logs
+
+- OUTPUT_RABBITMQ - whether to enable this output. Defaults to `false`
+- RABBITMQ_HOST - hostname of rabbitmq server
+- EXCHANGE - Defaults -t `logging`
+- EXCHANGE_TYPE - Defaults to `fanout`
+- RABBITMQ_KEY - Defaults to `logging`
+- RABBITMQ_USER - Defaults to `user`
+- RABBITMQ_PASSWORD - Defaults to `password`
+
 ## Running
 
 ```

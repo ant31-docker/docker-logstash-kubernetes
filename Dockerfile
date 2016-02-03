@@ -13,6 +13,7 @@ RUN /opt/logstash/bin/plugin install logstash-input-journald
 
 COPY run.sh /run.sh
 COPY conf.d/ /etc/logstash/conf.d/
+COPY outputs.d/ /root/outputs/
 
 VOLUME /var/log/logstash
 
