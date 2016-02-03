@@ -35,7 +35,7 @@ fi
 
 if [[ "$OUTPUT_GELF" == "true" ]]; then
    echo "<$(date)> - Enabling gelf output"
-   mv -f /root/outputs/30_output* /etc/logstash/conf.d/
+   mv -f /root/outputs/31_output* /etc/logstash/conf.d/
     sed -e "s/%GELF_HOST%/${GELF_HOST}/" \
         -e "s/%GELF_PORT%/${GELF_PORT}/" \
         -i /etc/logstash/conf.d/31_output_kubernetes_gelf.conf \
