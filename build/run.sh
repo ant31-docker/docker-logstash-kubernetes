@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 : ${LS_HOME:=/var/lib/logstash}
 : ${HOME:=${LS_HOME}}
@@ -55,4 +55,4 @@ fi
 ulimit -n ${LS_OPEN_FILES} > /dev/null
 cd ${LS_HOME}
 
-/opt/logstash/bin/logstash -f /etc/logstash/conf.d
+/opt/logstash/bin/logstash -f /etc/logstash/conf.d ${LOG_OPTS}
